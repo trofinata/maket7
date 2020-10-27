@@ -9,7 +9,9 @@
 <body>
 	<header class="main-header">
 		<nav class="main-nav">
-			<a href="#"><img src="logo.svg" alt="Логотип"></a>
+			<a href="#" class="logo">
+				<img src="logo.svg" alt="Логотип" width="99" height="21">
+			</a>
 			<ul class="nav-list">				
 				<li class="nav-item">
 					<a href="#">О нас</a>
@@ -28,79 +30,76 @@
 				</li>
 			</ul>
 			<a href="tel:88007773325">8 (800) 777-33-25</a>
-			<form action="#" method="POST">
-  				<input type="search">
-			</form>
-			<a href="#"></a>
+			<a href="#">Поиск</a>
+			<a href="#">Личный кабинет пользователя</a>
 		</nav>
 	</header>
 	<main>
-		<h1>Туристический клуб «Mountain»</h1>
+		<h1 class="visually-hidden">Главная страница туристического клуба «Mountain»</h1>
 		<seсtion class="promo">
 			<h2>Эверест</h2>
-			<a href="#">Подробнее</a>
+			<img src="img/photo-76.jpg" width="1366" height="650" alt="Малоснежные вершины горы Эверест на фоне облачного неба">
+			<a href="card.html">Подробнее</a>
 		</seсtion>
-		<seсtion class="peak">
+		<seсtion class="climbing-tours">
 			<h2>Туры с восхождением на вершины мира</h2>
 			<p>Мы являемся экспертами в организации альпинистских туров для опытных альпинистов и для новичков. Вы можете доверить нам полную организацию вашего приключения от А до Я и быть уверенными в качестве и безопасности восхождения.</p>
 			<p>Наша компания предоставляет все необходимое: консультацию по выбору тура, перелет, визу, бронирование проживания, питание, оборудование, необходимое для восхождения, опытных гидов, полное сопровождение.</p>
 			<img src="map.png" alt="Карта" width="798" height="375">
 		</seсtion>
-		<seсtion class="popular">
+		<seсtion class="popular-tours">
 			<h2>Популярные туры</h2>
 			<ul class="tour-list">
 				<li class="tour-item">
-					<a href="#">
-						<p>Россия</p>
-						<button></button>
-						<h3>Белуха</h3>
-						<ul class="conditions-list">
-							<li class="сonditions-item">4506 м</li> 
-							<li class="сonditions-item">12 дней</li> 
-							<li class="сonditions-item">от 45000 ₽</li>
-						</ul>
-						<p>Средний уровень</p>
-					</a>
+					<h3><a href="card.html">Белуха</a></h3>
+					<img src="img/photo-55.jpg" width="370" height="326" alt="Снежные вершины горы Белуха в облаках">
+					<p>Россия</p>
+					<ul class="conditions-list">
+						<li class="сonditions-item">4506 м</li> 
+						<li class="сonditions-item">12 дней</li> 
+						<li class="сonditions-item">от 45000 ₽</li>
+					</ul>
+					<p>Средний уровень</p>
+					<button type="button"><span class="visually-hidden">Добавить в избранное</span></button>		
 				</li>
 				<li class="tour-item">
-					<a href="#">
-						<p>Россия</p>
-						<button></button>
-						<h3>Эльбрус</h3>
-						<ul class="conditions-list">
-							<li class="сonditions-item">5642 м</li> 
-							<li class="сonditions-item">10 дней</li> 
-							<li class="сonditions-item">от 25 000 ₽</li> 
-						</ul>
-						<p>Средний уровень</p>
-					</a>
+					<h3><a href="card.html">Эльбрус</a></h3>
+            		<img src="img/photo-83.jpg" width="370" height="326" alt="Группа туристов уходит в снежные горы">
+            		<p>Россия</p>
+		            <ul>
+		              <li>5642 м</li>
+		              <li>10 дней</li>
+		              <li>от 25 000 ₽</li>
+		            </ul>
+            		<p>Средний уровень</p>
+            		<button type="button"><span class="visually-hidden">Добавить в избранное</span></button>
 				</li>	
 				<li class="tour-item">
-					<a href="#">
-						<p>Танзания</p>
-						<button></button>
-						<h3>Килиманджаро</h3>
-						<ul class="conditions-list">
-							<li class="сonditions-item">5895 м</li> 
-							<li class="сonditions-item">4 дня</li> 
-							<li class="сonditions-item">от 55000 ₽</li>							
-						</ul>				
-						<p>Простой уровень</p>
-					</a>
+					<h3><a href="card.html">Килиманджаро</a></h3>
+		            <img src="img/photo-43.jpg" width="370" height="326" alt="Острые пики заснеженных вершин горы Килиманджаро">
+		            <p>Танзания</p>
+		            <ul>
+		              <li>5895 м</li>
+		              <li>4 дня</li>
+		              <li>от 55 000 ₽</li>
+		            </ul>
+		            <p>Простой уровень</p>
+		            <button type="button"><span class="visually-hidden">Добавить в избранное</span></button>
 				</li>
 			</ul>
-			<button></button>
-			<button></button>			
+			<button type="button">Назад</button>
+			<button type="button">Вперед</button>			
 		</seсtion>
-		<seсtion class="level">
-			<h2>Россия</h2>
+		<seсtion class="prices">
+			<h2 class="visually-hidden">Стоимость туров</h2>
+			<p>Россия</p>
 			<p>Более 15 туров для альпинистов всех уровней</p>
 			<table>
 				<tr>
-					<td>Вершина</td> 
-					<td>Высота</td> 
-					<td>Уровень</td> 
-					<td>Стоимость</td>				
+					<th>Вершина</th> 
+					<th>Высота</th> 
+					<th>Уровень</th> 
+					<th>Стоимость</th>				
 				</tr>
 				<tr>
 					<td>Эльбрус</td> 
@@ -133,44 +132,54 @@
 			<h2>Блог</h2>
 			<ul class="news-list">
 				<li class="news-item">
-					<time datetime="2020-01-15">15 января, 2020</time>
-					<h3>Как подготовиться к первому восхождению на вершину</h3>
-					<article>
+					<a href="#">
 						<time datetime="2020-01-15">15 января, 2020</time>
-						<h1>Как подготовиться к первому восхождению на вершину</h1>
+						<p>Как подготовиться к первому восхождению на вершину</p>
+					</a>
+					<article class="blog-article">						
+						<h3>Как подготовиться к первому восхождению на вершину</h3>
 						<img src="photo-77.jpg" alt="Фото" width="700" height="287">
+						<time datetime="2020-01-15">15 января, 2020</time>
 						<p>Перед тем, как отправиться на покорение вершины горы, нужно не только привести          в порядок свою физическую форму, но и тренировать выносливость, дыхательную и сердечно-сосудистую системы. Именно на них приходится максимальная нагрузка на высоте. Поэтому из-за недостаточной подготовки вы можете сойти на полпути. Чтобы этого не случилось, занимайтесь плаванием, бегом, велосипедом и кардиотренировками.</p>
 						<p>Как должны проходить тренировки? В первую очередь, тренировки должны проходить постоянно, эффективно и интенсивно. Кроме того, нагрузка постепенно должна увеличиваться. В случае с бегом обязательно делать это с учетом пульса. Грамотно спланированный бег позволит не только сбросить вес, но и укрепит сердечную мышцу. При беге с высоким пульсом вы позволите организму привыкнуть к недостатку кислорода — то, с чем обязательно встретитесь в горах. Для укрепления физической подготовки и повышения выносливости также бегайте в горку или в быстром темпе поднимайтесь по лестницам. И не забудьте отдохнуть за неделю до путешествия!</p>
 					</article>
 				</li>
 				<li class="news-item">
-					<time datetime="2020-01-10">10 января, 2020</time>
-					<h3>Фестиваль Alpika Freeski Аlpindustria Fest Красная Поляна 13-16 февраля</h3>
+					<a href="#">
+						<time datetime="2020-01-10">10 января, 2020</time>
+						<p>Фестиваль Alpika Freeski Аlpindustria Fest Красная Поляна 13-16 февраля</p>
+					</a>
 				</li>
 				<li class="news-item">
-					<time datetime="2019-12-20">20 декабря, 2019</time>
-					<h3>Особенности альпинизма на Камчатке. Все о Ключевой Сопке</h3>
+					<a href="#">
+						<time datetime="2019-12-20">20 декабря, 2019</time>
+						<p>Особенности альпинизма на Камчатке. Все о Ключевой Сопке</p>
+					</a>
 				</li>
 				<li class="news-item">
-					<time datetime="2019-12-15">15 декабря, 2019</time>
-					<h3>Что происходит с человеком на высоте более 3000 метров?</h3>
+					<a href="#">
+						<time datetime="2019-12-15">15 декабря, 2019</time>
+						<p>Что происходит с человеком на высоте более 3000 метров?</p>
+					</a>
 				</li>
 				<li class="news-item">
-					<time datetime="2019-12-15">15 декабря, 2019</time>
-					<h3>Что происходит с человеком на высоте более 3000 метров?</h3>
+					<a href="#">
+						<time datetime="2019-12-15">15 декабря, 2019</time>
+						<p>Что происходит с человеком на высоте более 3000 метров?</p>
+					</a>
 				</li>
 			</ul>
 				<a href="#">Читать все новости</a>
 		</seсtion>
-		<seсtion class="order">
+		<seсtion class="feedback">
 			<h2>Нужна помощь с выбором тура?</h2>
 			<p>Заполните форму, наш менеджер свяжется с вами в ближайшее время и подберет подходящий тур</p>
-			<form action="#" method="get" class="main-form">
-				<label for="form-name">Имя</label>
+			<form action="#" method="get" id="main-form">
+				<label for="form-name" class="visually-hidden">Имя</label>
 				<input type="text" name="name" id="form-name" placeholder="Имя">
-				<label for="form-tel">Телефон</label>
+				<label for="form-tel" class="visually-hidden">Телефон</label>
 				<input type="tel" name="tel" id="form-tel" placeholder="Телефон">
-				<label for="form-email">E-mail</label>
+				<label for="form-email" class="visually-hidden">E-mail</label>
 				<input type="email" name="email" id="form-email" placeholder="E-mail">
 				<button type="submit">Отправить</button>
 			</form>
@@ -182,30 +191,32 @@
 			<img src="map-office.png" alt="Карта" width="600" height="457">
 			<dl>	
 				<dt>Адрес:</dt>
-				<dd>Санкт-Петербург, ул. Большая Конюшенная, 19</dd>
+				<dd><address>Санкт-Петербург, ул. Большая Конюшенная, 19</address></dd>
 				<dt>Телефон:</dt>
-				<dd>8 (800) 777-33-25</dd>
+				<dd><a href="tel:8800777335">8 (800) 777-33-25</a></dd>
 				<dt>E-mail:</dt>
-				<dd>info@mountain.ru</dd>
+				<dd><a href="mailto:info@mountain.ru">info@mountain.ru</a></dd>
 			</dl>
-			<p>Социальные сети:</p>
-			<ul class="soсial-list">
-				<li class="soсial-item">
-					<a href="#"></a>
-				</li>
-				<li class="soсial-item">
-					<a href="#"></a>
-				</li>
-				<li class="soсial-item">
-					<a href="#"></a>
-				</li>
-			</ul>
+			<dt>Социальные сети:</dt>
+			<dd>
+				<ul class="soсial-list">
+					<li class="soсial-item">
+						<a href="#"></a>
+					</li>
+					<li class="soсial-item">
+						<a href="#"></a>
+					</li>
+					<li class="soсial-item">
+						<a href="#"></a>
+					</li>
+				</ul>
+			</dd>
 		</seсtion>
 	</main>
 	<footer class="main-footer">
 		<p>Maroon © 2020 Все права защищены</p>
-		<img src="logo.svg" alt="Логотип">
-		Политика конфиденциальности
+		<a href="#"><img src="logo.svg" alt="Логотип" width="99" height="21"></a>
+		<a href="#">Политика конфиденциальности</a>
 	</footer>
 </body>
 </html>
